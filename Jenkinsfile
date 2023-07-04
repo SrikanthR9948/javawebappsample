@@ -15,7 +15,7 @@ node {
     'AZURE_SUBSCRIPTION_ID=4ab39ff8-53f4-4766-a57c-c42d3cd3eeab',
     'AZURE_TENANT_ID=82b4b716-e917-4f2d-9a2b-1f298f92e6c3',
     'AZURE_CLIENT_ID=<your_service_principal_client_id>',
-    'AZURE_CLIENT_SECRET=72c4549d-c9de-4e5d-a04c-60cc5d214999'
+    'AZURE_CLIENT_SECRET=HPd8Q~ob~2SPTXAMdUUwmwTPBoThPjxkG_hxFaJh'
   ]) {
     stage('init') {
       checkout scm
@@ -31,7 +31,7 @@ node {
       
       // Login to Azure
       withCredentials([azureServicePrincipal(credentialsId: '263f59d2-9a16-427e-89b7-a60639d4912c', variable: 'AZURE_CREDENTIALS')]) {
-        sh 'az login --service-principal -u 7f577f4c-ef92-4172-922d-fd1bdaac4577 -p 72c4549d-c9de-4e5d-a04c-60cc5d214999 --tenant 82b4b716-e917-4f2d-9a2b-1f298f92e6c3 --allow-no-subscriptions'
+        sh 'az login --service-principal -u 7f577f4c-ef92-4172-922d-fd1bdaac4577 -p HPd8Q~ob~2SPTXAMdUUwmwTPBoThPjxkG_hxFaJh --tenant 82b4b716-e917-4f2d-9a2b-1f298f92e6c3 --allow-no-subscriptions'
       }
       
       // Set the active subscription
