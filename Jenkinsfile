@@ -15,7 +15,7 @@ node {
     'AZURE_SUBSCRIPTION_ID=4ab39ff8-53f4-4766-a57c-c42d3cd3eeab',
     'AZURE_TENANT_ID=82b4b716-e917-4f2d-9a2b-1f298f92e6c3',
     'AZURE_CLIENT_ID=<your_service_principal_client_id>',
-    'AZURE_CLIENT_SECRET=<your_service_principal_client_secret>'
+    'AZURE_CLIENT_SECRET=72c4549d-c9de-4e5d-a04c-60cc5d214999'
   ]) {
     stage('init') {
       checkout scm
