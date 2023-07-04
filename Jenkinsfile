@@ -25,7 +25,7 @@ node {
       def webAppName = 'WSwebapp'
 
       // Login to Azure
-      withCredentials([azureServicePrincipal(credentialsId: '263f59d2-9a16-427e-89b7-a60639d4912c', variable: 'AZURE_CREDENTIALS')]) {
+      az login --service-principal --username 7f577f4c-ef92-4172-922d-fd1bdaac4577 --password 72c4549d-c9de-4e5d-a04c-60cc5d214999 --tenant 82b4b716-e917-4f2d-9a2b-1f298f92e6c3)]) {
         sh "az login --service-principal --username \$AZURE_CREDENTIALS_USR --password \$AZURE_CREDENTIALS_PSW --tenant \$AZURE_CREDENTIALS_TENANT"
         sh "az account set --subscription \$AZURE_SUBSCRIPTION_ID"
       }
@@ -42,3 +42,10 @@ node {
     }
   }
 }
+
+
+
+
+
+
+
